@@ -1,0 +1,57 @@
+*{padding: 0;margin: 0;}
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.parent {
+	height: 100vh;
+	/*ie9及以下不兼容*/
+	/*display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	justify-content:center;
+	align-items:center;*/
+}
+
+.child {
+	/*position: relative;*/
+	position: absolute;
+	width: 400px;
+	height: 200px;
+	padding: 20px;
+	background-color: #ccc;
+	top:50%;
+	left: 50%;
+	/*当高度不确定时，但是只兼容到ie9*/
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	/*宽高确定*/
+	/*margin: -120px 0 0 -220px;*/
+	overflow: hidden;
+}
+
+.child p {
+	position: relative;
+}
+
+.yellow-roll {
+	position: absolute;
+	width:100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #fc0;
+}
+
+.yellow-rool1 {
+	top: -50px;
+	left: -50px;
+}
+
+.yellow-rool2 {
+	bottom: -50px;
+	right: -50px;
+}
